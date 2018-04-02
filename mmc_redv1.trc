@@ -1,0 +1,363 @@
+sampling_period[0] = 25e-006
+
+_integer_type(32)
+_floating_point_type(64, IEEE)
+
+
+group "Vred"
+	Vabc[0]	flt
+	Vabc[1]	flt
+	Vabc[2]	flt
+	sinc3	flt
+	sinc2	flt
+	sinc1	flt
+	sinc	flt
+	Valfa	flt
+	Vbeta	flt
+endgroup
+
+group "Corrientes"
+		ch001  		flt
+		ch002  		flt
+		ch003  		flt
+		ch004  		flt
+		ch005  		flt
+		ch006  		flt
+		ch007  		flt
+		ch008  		flt
+		Ixy[0]			flt
+		Ixy[1]			flt
+		Ixy[2]			flt
+		Ixy[3]			flt
+		Ixy[4]			flt
+		Ixy[5]			flt
+		IxyO[0]			flt
+		IxyO[1]			flt
+		IxyO[2]			flt
+		IxyO[3]			flt
+		IxyO[4]			flt
+		IxyO[5]			flt
+		Iz[0]	flt
+		Iz[1]	flt
+		Iz[2]	flt
+		Io[0]	flt
+		Io[1]	flt
+		Io[2]	flt
+		Iodq[0]	flt
+		Iodq[1]	flt
+		Izdq[0]	flt
+		Izdq[1]	flt
+		IzO[0]	flt
+		IzO[1]	flt
+		IzO[2]	flt
+		Is	flt
+		Im	flt
+		IoR[0]	flt	
+		IoR[1]	flt	
+		IoR[2]	flt	
+		Gi	flt
+endgroup
+
+group "Modulacion"
+modxy[0]	flt
+modxy[1]	flt
+modxy[2]	flt
+modxy[3]	flt
+modxy[4]	flt
+modxy[5]	flt
+Mxy[0]			flt
+Mxy[1]			flt
+Mxy[2]			flt
+Mxy[3]			flt
+Mxy[4]			flt
+Mxy[5]			flt
+endgroup
+
+group "senales de control"
+		Control_maximus		uint	
+		Offset	uint
+		exec_time_A	flt
+		readi	uint
+		enable_mod	uint
+		ready_current	uint
+		ready_volt	uint
+		hv	flt
+		h	flt
+		update_control	uint
+		counter	int
+		read_state	uint
+		tt[0]	uint
+		diff[0]	flt
+		diff[1]	flt
+		diff[2]	flt
+		diff[3]	flt
+		diff[4]	flt
+		diff[5]	flt
+		Rvolt_1[0]	flt
+		Rvolt_2[0]	flt
+		DV[0]	flt
+		DV[1]	flt
+		DV[2]	flt
+		DV[3]	flt
+		DV[4]	flt
+		DV[5]	flt
+		k	flt
+endgroup
+
+group "Ancho de banda PI"
+		fv	flt
+		fi	flt
+		fio	flt
+		fis	flt
+		Ti	flt
+		Is_est	flt
+endgroup
+
+group "proteccion y errores"
+		protect	uint
+		protect2 uint
+		error_counter	uint
+		over_voltage	uint
+		over_current	uint
+		warn_cero	uint
+		Iosat	flt
+		testa uint
+endgroup
+
+group "PI voltaje"
+	kpv	flt
+	kiv	flt
+	kpvo	flt
+	kivo	flt
+	kpvz	flt
+	kivz	flt
+	kpvs	flt
+	kivs	flt
+	kpvm	flt
+	kivm	flt
+	err_ov_1[0]	flt
+	err_ov_1[1]	flt
+	err_ov_1[2]	flt
+	err_zv_1[0]	flt
+	err_zv_1[1]	flt
+	err_zv_1[2]	flt
+	err_ov[0]	flt
+	err_ov[1]	flt
+	err_ov[2]	flt
+	err_zv[0]	flt
+	err_zv[1]	flt
+	err_zv[2]	flt
+	err_sv_1	flt
+	err_sv	flt
+	err_mv	flt
+	po_ref[0]	flt
+	po_ref[1]	flt
+	po_ref[2]	flt
+	pz_ref[0]	flt
+	pz_ref[1]	flt
+	pz_ref[2]	flt
+	ps_ref	flt
+	pm_ref	flt
+	d_vmref	flt
+	Umax_v	flt
+endgroup
+
+group "PI corriente"
+	Umax_i	flt
+	ki_o	flt
+	kp_o	flt
+	kp_z	flt
+	ki_z	flt
+	ki_s	flt
+	kp_s	flt
+	d_izref[0]	flt
+	d_izref[1]	flt
+	d_izref[2]	flt	
+	d_ioref[0]	flt
+	d_ioref[1]	flt
+	d_ioref[2]	flt	
+	d_isref	flt
+	Io_refT[0]	flt
+	Io_refT[1]	flt
+	Io_refT[2]	flt
+	Iz_refT[0]	flt
+	Iz_refT[1]	flt
+	Iz_refT[2]	flt
+endgroup
+
+group "Referencias de voltaje"
+	Voref[0]	flt
+	Voref[1]	flt
+	Voref[2]	flt
+	Vzref[0]	flt
+	Vzref[1]	flt
+	Vzref[2]	flt	
+	Vsref	flt
+	Vmref	flt
+	Vxy[0]			flt
+	Vxy[1]			flt
+	Vxy[2]			flt
+	Vxy[3]			flt
+	Vxy[4]			flt
+	Vxy[5]			flt
+	Voref_dq[0]	flt
+	Voref_dq[1]	flt
+endgroup
+
+group "Test Modulacion"
+	Vo_mod[0]	flt
+	Vo_mod[1]	flt
+	Vz_mod[0]	flt
+	Vz_mod[1]	flt
+endgroup
+
+group "Voltaje de entrada"
+		VcxyIn[0]		flt
+		VcxyIn[1]		flt
+		VcxyIn[2]		flt
+		VcxyIn[3]		flt
+		VcxyIn[4]		flt
+		VcxyIn[5]		flt
+		VcxyO[0]		flt
+		VcxyO[1]		flt
+		VcxyO[2]		flt
+		VcxyO[3]		flt
+		VcxyO[4]		flt
+		VcxyO[5]		flt
+		vcpa		flt
+		vcpb		flt
+		vcpc		flt
+		vcna		flt
+		vcnb		flt
+		vcnc		flt
+		voltage[0]		uint
+		voltage[1]		uint
+		voltage[2]		uint
+		voltage[3]		uint
+		voltage[4]		uint
+		voltage[5]		uint		
+		voltage_t[0]		flt
+		voltage_t[1]		flt
+		voltage_t[2]		flt
+		voltage_t[3]		flt
+		voltage_t[4]		flt
+		voltage_t[5]		flt		
+		RvoltF[0]		flt
+		RvoltF[1]		flt
+		RvoltF[2]		flt
+		RvoltF[3]		flt
+		RvoltF[4]		flt
+		RvoltF[5]		flt		
+		Prom[0]		flt
+		Prom[1]		flt
+		Prom[2]		flt
+		Prom[3]		flt
+		Prom[4]		flt
+		Prom[5]		flt			
+endgroup
+
+group "Offset de voltages"
+	vcpa_off	flt
+	vcpb_off	flt
+	vcpc_off	flt
+	vcna_off	flt
+	vcnb_off	flt
+	vcnc_off	flt
+endgroup
+
+group "Energias"
+		Exy[0]			flt
+		Exy[1]			flt
+		Exy[2]			flt
+		Exy[3]			flt
+		Exy[4]			flt
+		Exy[5]			flt
+		Eo[0]			flt
+		Eo[1]			flt
+		Eo[2]			flt
+		Es				flt
+		Em				flt
+		Ez[0]			flt
+		Ez[1]			flt
+		Ez[2]			flt
+		Exy_ref			flt
+endgroup
+
+group "fpga"
+	fpga	uint
+	levelAp	uint
+	levelBp	uint
+	levelCp	uint
+	levelAn	uint
+	levelBn	uint
+	levelCn	uint
+endgroup
+
+group "referencias"
+		Iodq_ref[0]		flt
+		Iodq_ref[1]		flt
+		Io_ref[0]		flt
+		Io_ref[1]		flt
+		Io_ref[2]		flt
+		Iz_ref[0]		flt
+		Iz_ref[1]		flt
+		Iz_ref[2]		flt	
+		Iz_refT[0]	flt
+		Iz_refT[1]	flt
+		Iz_refT[2]	flt	
+		
+		Vc_ref		flt
+		Vdc		flt
+endgroup
+
+group "Inyeccion IZ"
+inyect_IZ	uint
+Podq[0]	flt
+Podq[1]	flt
+PodqF[0]	flt
+PodqF[1]	flt
+PoaF[0]	flt
+PobF[0]	flt
+PocF[0]	flt
+Izdq_ref[0]		flt
+Izdq_ref[1]		flt
+pod_ref	flt
+poq_ref	flt
+ki_iz	flt
+kp_iz	flt
+max_iz	flt
+min_iz	flt
+endgroup
+
+group "Inyeccion VM"
+inyect_VM	uint
+pzd_ref	flt
+pzq_ref	flt
+Vmdq_iny[0]	flt
+Vmdq_iny[1]	flt
+Pzd[0]	flt
+Pzq[0]	flt
+PzdqF[0]	flt
+PzdqF[1]	flt
+ki_vm	flt
+kp_vm	flt
+max_vm	flt
+min_vm	flt
+endgroup
+
+group "Potencias"
+	Pxy[0]	flt
+	Pxy[1]	flt
+	Pxy[2]	flt
+	Pxy[3]	flt
+	Pxy[4]	flt
+	Pxy[5]	flt
+	Po[0]	flt
+	Po[1]	flt
+	Po[2]	flt
+	Pm	flt
+	Ps	flt
+	Pz[0]	flt
+	Pz[1]	flt
+	Pz[2]	flt	
+endgroup
